@@ -1,0 +1,32 @@
+{
+  "name": "webpair",
+  "version": "0.0.1",
+  "description": "A multi-functional WhatsApp bot Web paircode for session pairing and management.",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "npm": ">=9.7.2",
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "stop": "echo 'No stop functionality (use Ctrl+C to stop)'",
+    "restart": "echo 'No restart functionality (use manual restart)'"
+  },
+  "author": "Nick",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.7.17",
+    "qrcode": "^1.5.3",
+    "awesome-phonenumber": "^2.64.0",
+    "pino": "^8.1.0",
+    "phone": "3.1.30",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.1",
+    "path": "^0.12.7",
+    "megajs": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
