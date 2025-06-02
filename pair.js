@@ -80,14 +80,14 @@ router.get('/', async (req, res) => {
                     const megaUrl = await upload(fs.createReadStream(`${dirs}/creds.json`), `${generateRandomId()}.json`);
 
                     // Add "UMAR=" prefix to the session ID
-                    let stringSession = `${megaUrl.replace('https://mega.nz/file/', 'RAVEN;;;')}`;
+                    let stringSession = `${megaUrl.replace('https://mega.nz/file/', 'ROVER-XMD;;;')}`;
 
                     // Send the session ID to the target number
                     await Um4r719.sendMessage(Um4r719.user.id, { text: stringSession });
 
                     // Send confirmation message
                     await Um4r719.sendMessage(Um4r719.user.id, { 
-                        text: 'Raven has been linked to your WhatsApp account! Do not share this session_id with anyone.\nCopy and paste it on the SESSION string during deploy as it will be used for authentication.\n\nIncase you are facing Any issue reach me via here👇\n\nhttps://wa.me/message/YNDA2RFTE35LB1\n\nAnd dont forget to sleep😴, for even the rentless must recharge⚡.\n\nGoodluck 🎉.\n' 
+                        text: 'ROVER-XMD has been linked to your WhatsApp account! Do not share this session_id with anyone.\nCopy and paste it on the SESSION string during deploy as it will be used for authentication.\n\nIncase you are facing Any issue reach me via here👇\n\nhttps://wa.me/message/24769677305\n\nAnd dont forget to fork and star tye bot repo.\n\nGoodluck 🎉.\n' 
                     });
 
                     // Clean up session after use
